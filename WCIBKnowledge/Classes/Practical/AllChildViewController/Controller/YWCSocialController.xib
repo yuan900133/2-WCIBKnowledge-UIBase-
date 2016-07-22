@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9531" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="YWCSocialController">
+            <connections>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Z6G-tw-btZ">
+                    <rect key="frame" x="168" y="121" width="40" height="40"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="jeD-As-eFt"/>
+                        <constraint firstAttribute="width" constant="40" id="x5p-Tm-0LX"/>
+                    </constraints>
+                    <state key="normal" image="weixin"/>
+                    <connections>
+                        <action selector="wechatLoginWayBtn:" destination="-1" eventType="touchUpInside" id="DNk-rB-H9z"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ig5-al-Qxc">
+                    <rect key="frame" x="168" y="180" width="40" height="40"/>
+                    <state key="normal" image="qq"/>
+                    <connections>
+                        <action selector="qqLogin" destination="-1" eventType="touchUpInside" id="iVe-8e-r8A"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5af-oK-LSJ">
+                    <rect key="frame" x="168" y="246" width="40" height="40"/>
+                    <state key="normal" image="sian"/>
+                    <connections>
+                        <action selector="sianLogin" destination="-1" eventType="touchUpInside" id="kXx-tJ-nO9"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gTD-Hp-x7m">
+                    <rect key="frame" x="135" y="44" width="105" height="30"/>
+                    <state key="normal" title="第三方分享按钮"/>
+                    <connections>
+                        <action selector="shareBtn:" destination="-1" eventType="touchUpInside" id="Mqn-7d-iS6"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1Ji-My-rXb">
+                    <rect key="frame" x="168" y="308" width="40" height="40"/>
+                    <state key="normal" image="douban"/>
+                    <connections>
+                        <action selector="douBanLogin" destination="-1" eventType="touchUpInside" id="pnr-EY-Nx6"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="1Ji-My-rXb" firstAttribute="centerX" secondItem="5af-oK-LSJ" secondAttribute="centerX" id="0T8-sN-VT6"/>
+                <constraint firstItem="Ig5-al-Qxc" firstAttribute="height" secondItem="Z6G-tw-btZ" secondAttribute="height" id="5Qa-r3-WCF"/>
+                <constraint firstItem="5af-oK-LSJ" firstAttribute="height" secondItem="Ig5-al-Qxc" secondAttribute="height" id="7eg-oO-CNK"/>
+                <constraint firstItem="Z6G-tw-btZ" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="B3M-yt-QVQ"/>
+                <constraint firstItem="Ig5-al-Qxc" firstAttribute="width" secondItem="Z6G-tw-btZ" secondAttribute="width" id="CYY-L7-fv2"/>
+                <constraint firstItem="1Ji-My-rXb" firstAttribute="height" secondItem="5af-oK-LSJ" secondAttribute="height" id="Kwe-k8-peV"/>
+                <constraint firstItem="5af-oK-LSJ" firstAttribute="centerX" secondItem="Ig5-al-Qxc" secondAttribute="centerX" id="Smj-L9-Chf"/>
+                <constraint firstItem="gTD-Hp-x7m" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="44" id="Tmt-Dn-khX"/>
+                <constraint firstItem="1Ji-My-rXb" firstAttribute="top" secondItem="5af-oK-LSJ" secondAttribute="bottom" constant="22" id="cQG-qW-jOb"/>
+                <constraint firstItem="Ig5-al-Qxc" firstAttribute="centerX" secondItem="Z6G-tw-btZ" secondAttribute="centerX" id="foc-ih-OUL"/>
+                <constraint firstItem="1Ji-My-rXb" firstAttribute="width" secondItem="5af-oK-LSJ" secondAttribute="width" id="p7U-4x-uds"/>
+                <constraint firstItem="5af-oK-LSJ" firstAttribute="top" secondItem="Ig5-al-Qxc" secondAttribute="bottom" constant="26" id="rUJ-JG-ixn"/>
+                <constraint firstItem="Ig5-al-Qxc" firstAttribute="top" secondItem="Z6G-tw-btZ" secondAttribute="bottom" constant="19" id="u9f-XY-xZS"/>
+                <constraint firstItem="gTD-Hp-x7m" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="vhN-E9-rDX"/>
+                <constraint firstItem="Z6G-tw-btZ" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="121" id="wj7-Ut-ufF"/>
+                <constraint firstItem="5af-oK-LSJ" firstAttribute="width" secondItem="Ig5-al-Qxc" secondAttribute="width" id="z53-FR-MMZ"/>
+            </constraints>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="douban" width="44" height="44"/>
+        <image name="qq" width="44" height="44"/>
+        <image name="sian" width="44" height="44"/>
+        <image name="weixin" width="44" height="44"/>
+    </resources>
+</document>

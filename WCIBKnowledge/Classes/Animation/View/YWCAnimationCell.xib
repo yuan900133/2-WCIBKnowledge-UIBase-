@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9531" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="animation" id="PFy-ix-Bb2" customClass="YWCAnimationCell">
+            <rect key="frame" x="0.0" y="0.0" width="150" height="150"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="150" height="150"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="1" translatesAutoresizingMaskIntoConstraints="NO" id="cv8-gD-gpd" customClass="YWCItemImage">
+                        <rect key="frame" x="0.0" y="0.0" width="150" height="150"/>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="画板" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NMT-6f-Og7" customClass="YWCTitleLabel">
+                        <rect key="frame" x="25" y="25" width="100" height="100"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="100" id="1EK-vi-0Up"/>
+                            <constraint firstAttribute="width" constant="100" id="9gy-Vg-5mE"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            </view>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="NMT-6f-Og7" firstAttribute="centerY" secondItem="PFy-ix-Bb2" secondAttribute="centerY" id="BGH-Ob-0mS"/>
+                <constraint firstAttribute="bottom" secondItem="cv8-gD-gpd" secondAttribute="bottom" id="CFJ-7Q-JrE"/>
+                <constraint firstItem="cv8-gD-gpd" firstAttribute="top" secondItem="PFy-ix-Bb2" secondAttribute="top" id="Ja5-js-kGg"/>
+                <constraint firstAttribute="trailing" secondItem="cv8-gD-gpd" secondAttribute="trailing" id="QgS-e9-cd2"/>
+                <constraint firstItem="cv8-gD-gpd" firstAttribute="leading" secondItem="PFy-ix-Bb2" secondAttribute="leading" id="Yn6-Qf-VCJ"/>
+                <constraint firstItem="NMT-6f-Og7" firstAttribute="centerX" secondItem="PFy-ix-Bb2" secondAttribute="centerX" id="q15-en-VdJ"/>
+            </constraints>
+            <size key="customSize" width="171" height="149"/>
+            <connections>
+                <outlet property="imageView" destination="cv8-gD-gpd" id="3Kr-mZ-OXT"/>
+                <outlet property="titleLabel" destination="NMT-6f-Og7" id="Ex4-fN-6xG"/>
+            </connections>
+            <point key="canvasLocation" x="467" y="330"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="1" width="450" height="252"/>
+    </resources>
+</document>
